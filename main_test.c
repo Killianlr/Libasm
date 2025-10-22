@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
+#include <fcntl.h>
 
 int main(void)
 {
-    char    *s1;
-    char    *s2;
+    char    *src = NULL;
+    char    *dst;
 
-    s1 = "hello";
-    s2 = "holla";
-    printf("%d\n", strcmp(s1, s2));
+    dst = strdup(NULL);
+    // printf("%p --- %s\n", src, src);
+    // printf("%p --- %s\n", dst, dst);
     return 0;
 }
